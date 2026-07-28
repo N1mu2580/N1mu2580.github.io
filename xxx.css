@@ -1,0 +1,319 @@
+@charset "utf-8";
+.menu a :hover {
+    background-color: white;
+    color: rgb(74,158,227);
+    transition :all .5s ease-out
+}
+
+body {
+    margin:0;
+    font-family:"Yu Gothic",sans-serif;
+    background:#5382aa;   /* 左右白色 */
+}
+
+.page {
+    width:1000px;
+    margin:0 auto;
+    background-color:#d9ecf7;
+    background-image:
+        url("MY WEB背景.png"),
+        linear-gradient(to right,rgb(193,217,238),rgb(74,158,227));
+    background-repeat:no-repeat;
+    background-position:center top;
+}
+
+header {
+    height: 260px;
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Arima Koshi';
+    font-weight: bold;
+    -webkit-text-stroke: 1px rgb(255, 255, 255); /* 文字边框 */
+    color: rgb(18, 85, 140);
+    background-color: rgba(67, 152, 209, 0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 60px;
+    letter-spacing: 8px;
+}
+
+header p {
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+nav {
+    background-color: #4e9dd5;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav li {
+    width: 180px;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 17px 0;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #73b2df;
+}
+
+main {
+    padding: 50px 60px;
+}
+
+section {
+    margin-bottom: 80px;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.home-text {
+    width: 50%;
+}
+
+.home-text h3{
+margin-top: 30px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+
+.home-text h2 {
+    margin-top: 0;
+    font-size: 42px;
+    color: rgb(18, 85, 140);
+}
+
+.home-text p {
+    line-height: 1.9;
+    color: white;
+    display: block;
+}
+
+.home-images {
+    width: 50%;
+}
+
+.home-image {
+    width: 80%;
+}
+
+.home-image img {
+    width: 80%;
+    display: block;
+}
+
+.profile-text {
+    width: 100%;
+    margin-top: 30px;
+    color: white;
+}
+
+.profile-text h3 {
+    margin-top: 0;
+    font-size: 25px;
+}
+
+.profile-list {
+    margin: 0;
+}
+
+.profile-row {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.profile-row dt {
+    width: 120px;
+    font-weight: bold;
+}
+
+.profile-row dd {
+    margin: 0;
+}
+
+.section-title {
+    padding-bottom: 10px;
+    font-size: 34px;
+    color: rgb(18, 85, 140);
+    border-bottom: 3px solid #ffffff;
+}
+
+.WORKS-box {
+    width: 100%;
+    overflow: hidden;
+}
+
+.photo img {
+    display: block;
+    width: 100%;
+}
+
+.WORKS-gallery {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border: 1px solid #d5e0e7;
+    box-sizing: border-box;
+}
+
+.WORKS-item {
+    flex: 0 0 300px;
+}
+
+.WORKS-item img {
+    width: auto;
+    height: 330px;
+    display: block;
+    object-fit: cover;
+}
+
+.LIFE-box {
+    width: 100%;
+    overflow: hidden;
+}
+
+.LIFE-gallery {
+    display: flex;
+    gap: 25px;
+    padding: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border: 1px solid #d5e0e7;
+    box-sizing: border-box;
+}
+
+.LIFE-item {
+    flex: 0 0 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.LIFE-item img {
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    display: block;
+}
+.contact-box {
+    padding: 35px;
+    text-align: center;
+    background-color: #edf5fa;
+}
+
+.contact-box a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 30px;
+    color: white;
+    background-color: #5e91b4;
+    text-decoration: none;
+}
+
+.contact-box a:hover {
+    background-color: #416d8c;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: #539fd5;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .page {
+        width: 100%;
+    }
+
+    main {
+        padding: 40px 30px;
+    }
+
+    .home {
+        gap: 20px;
+    }
+
+    .profile-text {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        height: 200px;
+        padding-left: 30px;
+    }
+
+    header h1 {
+        font-size: 42px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav li {
+        width: 50%;
+    }
+
+    .home {
+        display: block;
+    }
+
+    .home-text {
+        width: 100%;
+    }
+
+    .home-images {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .profile-image {
+        width: 220px;
+        margin: 25px auto 0;
+    }
+
+    .WORKS-item img {
+    width: 300px;
+    height: 500px;
+    display: block;
+    object-fit: contain;
+}
+
+    .LIFE-item {
+        width: 250px;
+    }
+}
